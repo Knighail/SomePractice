@@ -6,6 +6,8 @@ def insert_sort(alist):
         while turn:
             if alist[turn] < alist[turn-1]:
                 alist[turn], alist[turn-1] = alist[turn-1], alist[turn]
+            else:
+                break  # 此时已经是前面最大的，不用再比较了
             turn -= 1
 
 def main():
